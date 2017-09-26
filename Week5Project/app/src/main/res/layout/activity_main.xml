@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:context="com.example.caucse.week5project.MainActivity">
     <RelativeLayout
+        android:layout_weight="0.1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp">
         <Button
             android:text="menu"
             android:layout_width="wrap_content"
@@ -21,45 +23,57 @@
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
+        android:layout_weight="0.3"
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/menu1_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"/>
         <ImageView
             android:id="@+id/menu2_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
+        android:layout_weight="0.3"
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/menu3_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"/>
         <ImageView
             android:id="@+id/menu4_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
+        android:layout_weight="0.3"
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/menu5_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"/>
         <ImageView
             android:id="@+id/menu6_img"
+            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

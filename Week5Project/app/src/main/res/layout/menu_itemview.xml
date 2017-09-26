@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_height="120dp">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="120dp" />
+    <LinearLayout
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="120dp">
+        <TextView
+            android:id="@+id/title_tv"
+            android:text="가게이름"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/where_tv"
+            android:text="장소"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/open_tv"
+            android:text="영업시간"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ride_tv"
+            android:text="배달가격"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/call_btn"
+            android:text="call"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/pay_btn"
+            android:text="pay"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>
