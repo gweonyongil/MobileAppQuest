@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "1");
                 startActivity(intent);
             }
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "2");
                 startActivity(intent);
             }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "3");
                 startActivity(intent);
             }
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         img4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "4");
                 startActivity(intent);
             }
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         img5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "5");
                 startActivity(intent);
             }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         img6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RestActivity.class);
                 intent.putExtra("MENU", "6");
                 startActivity(intent);
             }

@@ -1,41 +1,22 @@
 package com.example.caucse.week5project;
 
 /**
- * Created by caucse on 2017-09-25.
+ * Created by kyi42 on 2017-09-26.
  */
 
 public class MenuItem {
-    String title;
-    String where;
-    String open;
-    String ride;
-    String call;
+    String menu;
+    String price;
 
-    public MenuItem(String title, String where, String open, String ride, String call) {
-        this.title = title;
-        this.where = where;
-        this.open = open;
-        this.ride = ride;
-        this.call = call;
+    public MenuItem(String menu, String price){
+        this.menu = menu;
+        this.price = price;
+    }
+    public String getMenu() {
+        return menu;
     }
 
-    public String getCall() {
-        return call;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getWhere() {
-        return where;
-    }
-
-    public String getOpen() {
-        return open;
-    }
-
-    public String getRide() {
-        return ride;
+    public String getPrice() {
+        return price;
     }
 }

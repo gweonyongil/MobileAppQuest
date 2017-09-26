@@ -17,8 +17,8 @@ import java.util.ArrayList;
  * Created by caucse on 2017-09-25.
  */
 
-public class MenuAdapter extends BaseAdapter {
-    private ArrayList<MenuItem> arrayList = new ArrayList<MenuItem>();
+public class RestAdapter extends BaseAdapter {
+    private ArrayList<RestItem> arrayList = new ArrayList<RestItem>();
 
     @Override
     public int getCount() {
@@ -42,7 +42,7 @@ public class MenuAdapter extends BaseAdapter {
 
         if(view == null){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.menu_itemview, viewGroup, false);
+            view = inflater.inflate(R.layout.rest_itemview, viewGroup, false);
         }
 
         ImageView imageView = (ImageView)view.findViewById(R.id.item_img);
@@ -53,15 +53,15 @@ public class MenuAdapter extends BaseAdapter {
         Button call_btn = (Button)view.findViewById(R.id.call_btn);
         Button pay_btn = (Button)view.findViewById(R.id.pay_btn);
 
-        final MenuItem menuItem = arrayList.get(i);
-        title_tv.setText(menuItem.getTitle());
-        where_tv.setText(menuItem.getWhere());
-        open_tv.setText(menuItem.getOpen());
-        ride_tv.setText(menuItem.getRide());
+        final RestItem restItem = arrayList.get(i);
+        title_tv.setText(restItem.getTitle());
+        where_tv.setText(restItem.getWhere());
+        open_tv.setText(restItem.getOpen());
+        ride_tv.setText(restItem.getRide());
         call_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String tel = "tel:"+menuItem.getCall().toString();
+                String tel = "tel:"+ restItem.getCall().toString();
                 context.startActivity(new Intent("android.intent.action.CALL", Uri.parse(tel)));
             }
         });
@@ -69,16 +69,16 @@ public class MenuAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context.getApplicationContext(), PayActivity.class);
-                intent.putExtra("title", menuItem.getTitle().toString())
-                        .putExtra("where", menuItem.getWhere().toString())
-                        .putExtra("open", menuItem.getOpen().toString())
-                        .putExtra("ride", menuItem.getRide().toString());
+                intent.putExtra("title", restItem.getTitle().toString())
+                        .putExtra("where", restItem.getWhere().toString())
+                        .putExtra("open", restItem.getOpen().toString())
+                        .putExtra("ride", restItem.getRide().toString());
                 context.startActivity(intent);
             }
         });
         return view;
     }
-    public void addItem(MenuItem menuItem){
-        arrayList.add(menuItem);
+    public void addItem(RestItem restItem){
+        arrayList.add(restItem);
     }
 }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.caucse.week5project.MenuActivity">
+    tools:context="com.example.caucse.week5project.RestActivity">
     <ListView
         android:id="@+id/menu_listview"
         android:layout_width="match_parent"
